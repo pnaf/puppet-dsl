@@ -1,0 +1,8 @@
+puppet-dsl is a collection of Puppet modules for use in a Data Science 
+Lab.
+
+Each module may contain a README or README.md file containing 
+information about the usage of each module.
+
+All modules within puppet-dsl are released under the Apache 2.0 License, 
+the same license as Puppet. See the file COPYING for details.
