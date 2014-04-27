@@ -1,0 +1,92 @@
+;
+; This file is managed by Puppet. You can edit this file on cpu01:
+; /etc/puppet/modules/bind9/files/db.172.18.56
+;
+; BIND data file for reverse lookups: media networks lab (nbl.cewit.stonybrook.edu.
+; Origin: 145.245.130.in-addr.arpa.
+;
+$ORIGIN 56.18.172.in-addr.arpa.
+$TTL    604800
+@       IN      SOA     nbl.cewit.stonybrook.edu. root.nbl.cewit.stonybrook.edu. (
+                              2009030215 ; se = serial number
+                              172800     ; ref = refresh = 2d
+                              900        ; ret = update retry = 15m
+                              1209600    ; ex = expiry = 2w
+                              3600       ; min = minimum = 1h
+			)
+
+; Name servers
+;@               IN      NS      172.18.56.1
+@ IN NS localhost.
+1 IN PTR gold.nbl.cewit.stonybrook.edu.
+2 IN PTR lydia.nbl.cewit.stonybrook.edu.
+3 IN PTR disk01.nbl.cewit.stonybrook.edu.
+4 IN PTR newton.nbl.cewit.stonybrook.edu.
+5 IN PTR teller.nbl.cewit.stonybrook.edu.
+6 IN PTR backblaze.nbl.cewit.stonybrook.edu.
+7 IN PTR fileserver.nbl.cewit.stonybrook.edu.
+8 IN PTR shrijeet.nbl.cewit.stonybrook.edu.
+11 IN PTR db01.nbl.cewit.stonybrook.edu.
+12 IN PTR db02.nbl.cewit.stonybrook.edu.
+13 IN PTR db03.nbl.cewit.stonybrook.edu.
+14 IN PTR db04.nbl.cewit.stonybrook.edu.
+21 IN PTR www.nbl.cewit.stonybrook.edu.
+22 IN PTR www2.nbl.cewit.stonybrook.edu.
+23 IN PTR www3.nbl.cewit.stonybrook.edu.
+61 IN PTR isengard.nbl.cewit.stonybrook.edu.
+60 IN PTR rivendell-lab.nbl.cewit.stonybrook.edu.
+58 IN PTR linux38.nbl.cewit.stonybrook.edu.
+59 IN PTR linux39.nbl.cewit.stonybrook.edu.
+72 IN PTR akshay.nbl.cewit.stonybrook.edu.
+62 IN PTR linux19.nbl.cewit.stonybrook.edu.
+73 IN PTR karthik.nbl.cewit.stonybrook.edu.
+74 IN PTR levon-laptop.nbl.cewit.stonybrook.edu.
+75 IN PTR girish-laptop.nbl.cewit.stonybrook.edu.
+76 IN PTR petra.nbl.cewit.stonybrook.edu.
+77 IN PTR carnap.nbl.cewit.stonybrook.edu.
+78 IN PTR steve-laptop.nbl.cewit.stonybrook.edu.
+79 IN PTR dudu.nbl.cewit.stonybrook.edu.
+80 IN PTR shraddha-laptop.nbl.cewit.stonybrook.edu.
+81 IN PTR pascal.nbl.cewit.stonybrook.edu.
+82 IN PTR helmsdeep.nbl.cewit.stonybrook.edu.
+83 IN PTR bmudiam-lappy.nbl.cewit.stonybrook.edu.
+84 IN PTR vaibhav.nbl.cewit.stonybrook.edu.
+85 IN PTR swarley.nbl.cewit.stonybrook.edu.
+86 IN PTR eduardo.nbl.cewit.stonybrook.edu.
+87 IN PTR bharat.nbl.cewit.stonybrook.edu.
+89 IN PTR szilard.nbl.cewit.stonybrook.edu.
+90 IN PTR yawling2.nbl.cewit.stonybrook.edu.
+91 IN PTR yawling.nbl.cewit.stonybrook.edu.
+92 IN PTR skiena.nbl.cewit.stonybrook.edu.
+93 IN PTR srivani.nbl.cewit.stonybrook.edu.
+94 IN PTR cezar.nbl.cewit.stonybrook.edu.
+95 IN PTR rami.nbl.cewit.stonybrook.edu.
+96 IN PTR hertz.nbl.cewit.stonybrook.edu.
+101 IN PTR cpu01.nbl.cewit.stonybrook.edu.
+;101 IN PTR puppet.nbl.cewit.stonybrook.edu.
+102 IN PTR cpu02.nbl.cewit.stonybrook.edu.
+103 IN PTR cpu03.nbl.cewit.stonybrook.edu.
+104 IN PTR cpu04.nbl.cewit.stonybrook.edu.
+105 IN PTR cpu05.nbl.cewit.stonybrook.edu.
+106 IN PTR cpu06.nbl.cewit.stonybrook.edu.
+107 IN PTR cpu07.nbl.cewit.stonybrook.edu.
+108 IN PTR cpu08.nbl.cewit.stonybrook.edu.
+109 IN PTR cpu09.nbl.cewit.stonybrook.edu.
+110 IN PTR cpu10.nbl.cewit.stonybrook.edu.
+111 IN PTR cpu11.nbl.cewit.stonybrook.edu.
+112 IN PTR cpu12.nbl.cewit.stonybrook.edu.
+113 IN PTR cpu13.nbl.cewit.stonybrook.edu.
+114 IN PTR cpu14.nbl.cewit.stonybrook.edu.
+115 IN PTR cpu15.nbl.cewit.stonybrook.edu.
+116 IN PTR cpu16.nbl.cewit.stonybrook.edu.
+117 IN PTR cpu17.nbl.cewit.stonybrook.edu.
+118 IN PTR cpu18.nbl.cewit.stonybrook.edu.
+119 IN PTR cpu19.nbl.cewit.stonybrook.edu.
+120 IN PTR cpu20.nbl.cewit.stonybrook.edu.
+121 IN PTR cpu21.nbl.cewit.stonybrook.edu.
+122 IN PTR cpu22.nbl.cewit.stonybrook.edu.
+123 IN PTR cpu23.nbl.cewit.stonybrook.edu.
+124 IN PTR cpu24.nbl.cewit.stonybrook.edu.
+198 IN PTR einstein.nbl.cewit.stonybrook.edu.
+199 IN PTR galileo.nbl.cewit.stonybrook.edu.
+201 IN PTR samsung.nbl.cewit.stonybrook.edu.

@@ -1,0 +1,152 @@
+;
+; This file is managed by Puppet. You can edit this file on cpu01:
+; /etc/puppet/modules/bind9/files/db.nbl
+;
+; BIND data file for reverse lookups: media networks lab (nbl.cewit.stonybrook.edu)
+; Origin: 145.245.130.in-addr.arpa.
+;
+$ORIGIN nbl.cewit.stonybrook.edu.
+$TTL    604800
+@       IN      SOA     nbl.cewit.stonybrook.edu. root.nbl.cewit.stonybrook.edu. (
+                              2009030215 ; se = serial number
+                              172800     ; ref = refresh = 2d
+                              900        ; ret = update retry = 15m
+                              1209600    ; ex = expiry = 2w
+                              3600       ; min = minimum = 1h
+			)
+; Mail
+
+;IN	MX	10 	nbl.cewit.stonybrook.edu
+;
+; Name servers
+;@       IN      NS      130.245.191.56
+@ IN NS localhost.
+; nbl.cewit.stonybrook.edu
+;@       IN      A       130.245.191.56
+
+; End of Head
+
+; Subnet ? - empty
+; NOTE: These machines must be plugged into
+; eth3 and have IP's in the following ranges:
+; 130.245.146.193-222
+; These can NOT mount nfs-home because they are potential
+; security risks.
+
+; Needed for relaying mail using postfix.
+smtp	IN	A	172.18.56.1 
+
+lydia	IN	A	172.18.56.2
+newtonx  IN A    10.2.1.4
+cpx01	IN	A	10.2.1.101
+cpx02	IN	A	10.2.1.102
+cpx03	IN	A	10.2.1.103
+cpx04	IN	A	10.2.1.104
+cpx05	IN	A	10.2.1.105
+cpx06	IN	A	10.2.1.106
+cpx07	IN	A	10.2.1.107
+cpx08	IN	A	10.2.1.108
+cpx09	IN	A	10.2.1.109
+cpx10	IN	A	10.2.1.110
+cpx11	IN	A	10.2.1.111
+cpx12	IN	A	10.2.1.112
+cpx13	IN	A	10.2.1.113
+cpx14	IN	A	10.2.1.114
+cpx15	IN	A	10.2.1.115
+cpx16	IN	A	10.2.1.116
+cpx17	IN	A	10.2.1.117
+cpx18	IN	A	10.2.1.118
+cpx19	IN	A	10.2.1.119
+cpx20	IN	A	10.2.1.120
+cpx21	IN	A	10.2.1.121
+cpx22	IN	A	10.2.1.122
+cpx23	IN	A	10.2.1.123
+cpx24	IN	A	10.2.1.124
+
+; The puppet master
+puppet	IN	CNAME	cpu01
+
+cpu01	IN	A	172.18.56.101
+cpu02	IN	A	172.18.56.102
+cpu03	IN	A	172.18.56.103
+cpu04	IN	A	172.18.56.104
+cpu05	IN	A	172.18.56.105
+cpu06	IN	A	172.18.56.106
+cpu07	IN	A	172.18.56.107
+cpu08	IN	A	172.18.56.108
+cpu09	IN	A	172.18.56.109
+cpu10	IN	A	172.18.56.110
+cpu11	IN	A	172.18.56.111
+cpu12	IN	A	172.18.56.112
+cpu13	IN	A	172.18.56.113
+cpu14	IN	A	172.18.56.114
+cpu15	IN	A	172.18.56.115
+cpu16	IN	A	172.18.56.116
+cpu17	IN	A	172.18.56.117
+cpu18	IN	A	172.18.56.118
+cpu19	IN	A	172.18.56.119
+cpu20	IN	A	172.18.56.120
+cpu21	IN	A	172.18.56.121
+cpu22	IN	A	172.18.56.122
+cpu23	IN	A	172.18.56.123
+cpu24	IN	A	172.18.56.124
+db01	IN	A	172.18.56.11
+db02	IN	A	172.18.56.12
+db03	IN	A	172.18.56.13
+db04	IN	A	172.18.56.14
+gold	IN	A	172.18.56.1
+
+www    IN  A   172.18.56.21
+www2    IN  A   172.18.56.22
+www3    IN  A   172.18.56.23
+
+disk01	IN	A	172.18.56.3
+newton  IN  A   172.18.56.4
+
+backblaze IN A 172.18.56.6
+
+einstein IN A 172.18.56.198
+galileo IN A 172.18.56.199
+
+rushd IN A 172.18.56.67
+descartes IN A 172.18.56.68
+kant IN A 172.18.56.69
+linux38	IN	A	172.18.56.58
+linux39	IN	A	172.18.56.59
+isengard	IN	A	172.18.56.61
+rivendell-lab IN A 172.18.56.60
+akshay          IN	A	172.18.56.72
+akshay-vpn IN A 192.168.8.26
+rivendell	IN	A	192.168.8.2
+mapleave	IN	A	192.168.8.14
+linux19 IN A 172.18.56.62
+sbrocks IN A 130.245.191.53
+www2-vpn IN A 192.168.8.22
+karthik IN A 172.18.56.73
+teller IN A 172.18.56.5
+shrijeet IN A 172.18.56.8
+levon-laptop IN A 172.18.56.74
+girish-laptop IN A 172.18.56.75
+petra IN A 172.18.56.76
+carnap IN A 172.18.56.77
+steve-laptop IN A 172.18.56.78
+dudu IN A 172.18.56.79
+shraddha-laptop IN A 172.18.56.80
+pascal IN A 172.18.56.81
+helmsdeep IN A 172.18.56.82
+bmudiam-lappy IN A 172.18.56.83
+vaibhav IN A 172.18.56.84
+swarley IN A 172.18.56.85
+eduardo IN A 172.18.56.86
+bharat IN A 172.18.56.87
+szilard IN A 172.18.56.89
+yawling2 IN A 172.18.56.90
+yawling IN A 172.18.56.91
+skiena IN A 172.18.56.92
+srivani IN A 172.18.56.93
+cezar IN A 172.18.56.94
+rami IN A 172.18.56.95
+hertz IN A 172.18.56.96
+fileserver IN A 172.18.56.7
+neil IN A 172.18.56.63
+samsung IN A 172.18.56.201
